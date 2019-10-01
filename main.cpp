@@ -266,33 +266,14 @@ void submenu1(){
         cin>>submenu1;
             switch (submenu1) {
                 case 1:
-
-                        cout << "------------------------------------------------------------------------" << endl;
-                        cout << "   * Ingrese los datos del instructor:  " << endl;
-                        cout << "------------------------------------------------------------------------" << endl;
-                        break;
-                    case 2:
-
-                        cout << "------------------------------------------------------------------------" << endl;
-                        cout << "   * Ingrese los datos del Socio:  " << endl;
-                        cout << "------------------------------------------------------------------------" << endl;
-                        cout << "   * NombreCompleto:" << endl;
-                        cin>>nombre;
-                        cout << "   * Cedula:" << endl;
-                        cin>>cedula;
-                        cout << "   * Correo Electronico:" << endl;
-                        cin>>correo;
-                        cout << "   * Telefono:" << endl;
-                        cin>>telefono;
-                        cout << "   * Fecha de Inscripcion:" << endl;
-                        cin>>fechaInscripcion;
-                        socio1(nombre, cedula, correo, telefono, fechaInscripcion);
-                        break;
-
-                    case 3:
-                        break;
-
-                    default:
+                    break;
+                    
+                case 2:
+                    break;
+                    
+                case 3:
+                    break;
+                default:
                         cout << "-----------------------------------------------------------------------------" << endl;
                         cout << " * Ingreso un numero que no corresponde a ninguna de las opciones posibles," << endl;
                         cout << "   Vuelva a intentarlo" << endl;
