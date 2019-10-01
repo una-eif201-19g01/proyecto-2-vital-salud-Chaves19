@@ -206,3 +206,110 @@ int main() {
         }while (menu != 5);
     }
 }
+
+void menu(){
+    std::string reporte;
+    int menu;
+    reporte = reporte + "MENU PRINCIPAL GIMNASIO VITAL SALUD \n" +
+    "   * Bienvenido al sistema del gimnasio VITAL SALUD: *\n" +
+    "---------------------------------------------------------------------------------------- \n" +
+    "   * 1. Mantenimiento \n" +
+    "   * 2. Asignar instructores \n" +
+    "   * 3. Seguimiento \n" +
+    "   * 4. Visualizacion \n" +
+    "   * 5. Salir del sistema \n" +
+    "----------------------------------------------------------------------------------------- \n" +
+    "   * Ingrese su seleccion: \n"
+    "----------------------------------------------------------------------------------------- \n";
+    cin>>menu;
+    
+    switch (menu) {
+        do{
+            case 1: 
+                void submenu1();
+                break;
+                
+            case 2: 
+                void submenu2();
+                break;
+                
+            case 3: 
+                void submenu3();
+                break;
+                
+            case 4: 
+                void submenu4();
+                break;
+                
+            case 5:
+                return 0;
+                break;
+                
+            default: " ";
+                break;
+                
+        
+        }while (menu != 5);    
+    }
+}
+void submenu1(){
+    do {
+        std::string reporte2;
+    
+        reporte2 = reporte2 + "------------------------------------------------------------------------ \n" +
+        "   * Bienvenido al sistema de Mantenimiento *  \n" +
+        "------------------------------------------------------------------------ \n" +
+        "   * 1. Ingresar instructores \n" +
+        "   * 2. Ingresar Socios \n" +
+        "   * 3. Volver al Menu Principal \n" +
+        "------------------------------------------------------------------------\n" +
+        cin>>submenu1;
+            switch (submenu1) {
+                case 1:
+
+                        cout << "------------------------------------------------------------------------" << endl;
+                        cout << "   * Ingrese los datos del instructor:  " << endl;
+                        cout << "------------------------------------------------------------------------" << endl;
+                        break;
+                    case 2:
+
+                        cout << "------------------------------------------------------------------------" << endl;
+                        cout << "   * Ingrese los datos del Socio:  " << endl;
+                        cout << "------------------------------------------------------------------------" << endl;
+                        cout << "   * NombreCompleto:" << endl;
+                        cin>>nombre;
+                        cout << "   * Cedula:" << endl;
+                        cin>>cedula;
+                        cout << "   * Correo Electronico:" << endl;
+                        cin>>correo;
+                        cout << "   * Telefono:" << endl;
+                        cin>>telefono;
+                        cout << "   * Fecha de Inscripcion:" << endl;
+                        cin>>fechaInscripcion;
+                        socio1(nombre, cedula, correo, telefono, fechaInscripcion);
+                        break;
+
+                    case 3:
+                        break;
+
+                    default:
+                        cout << "-----------------------------------------------------------------------------" << endl;
+                        cout << " * Ingreso un numero que no corresponde a ninguna de las opciones posibles," << endl;
+                        cout << "   Vuelva a intentarlo" << endl;
+                        cout << "-----------------------------------------------------------------------------" << endl;
+                        cout << endl;
+                        break;
+
+            }
+                
+    }while (submenu1 != 3);
+}
+void submenu2(){
+    
+}
+void submenu3(){
+    
+}
+void submenu4(){
+    
+}
