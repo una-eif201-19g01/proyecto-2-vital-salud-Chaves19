@@ -8,6 +8,8 @@ using namespace std;
 int main() {
     int menu, submenu1, submenu2, submenu3, submenu4;
 
+    //MODULARIZAR
+    
     cout << "MENU PRINCIPAL GIMNASIO VITAL SALUD" << endl;
     cout << "   * Bienvenido al sistema del gimnasio VITAL SALUD: *" << endl;
     cout << "----------------------------------------------------------------------------------------" << endl;
@@ -21,7 +23,7 @@ int main() {
     cout << "-----------------------------------------------------------------------------------------" << endl;
     cin>>menu;
     cout << endl;
-
+    
     switch (menu) {
         case 1:
             do {
