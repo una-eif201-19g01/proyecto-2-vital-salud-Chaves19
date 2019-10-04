@@ -22,3 +22,27 @@ Expediente::Expediente(const Expediente& orig) {
 Expediente::~Expediente() {
 }
 
+void Expediente::setGrasaCorporal(float grasaCorporal) {
+    this->grasaCorporal = grasaCorporal;
+}
+
+float Expediente::getGrasaCorporal(){
+    return grasaCorporal;
+}
+
+void Expediente::setMasaMuscular(float masaMuscular) {
+    this->masaMuscular = masaMuscular;
+}
+
+float Expediente::getMasaMuscular(){
+    return masaMuscular;
+}
+
+void Expediente::setPeso(float peso) {
+    this->peso = peso;
+}
+
+float Expediente::getPeso() const {
+    return peso;
+}
+

@@ -20,6 +20,8 @@ public:
     Rutina(const Rutina& orig);
     virtual ~Rutina();
 private:
+    std::string fechaDeVencimiento;
+    std::string objetivo;
 
 };
 

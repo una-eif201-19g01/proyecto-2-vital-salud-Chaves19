@@ -13,8 +13,8 @@
 
 #ifndef INSTRUCTOR_H
 #define INSTRUCTOR_H
-
-class Instructor {
+#include "Persona.h"
+class Instructor : public Persona {
 public:
     Instructor();
     Instructor(const Instructor& orig);

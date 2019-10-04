@@ -13,13 +13,15 @@
 
 #ifndef SOCIO_H
 #define SOCIO_H
-
-class Socio {
+#include "Persona.h"
+class Socio : public Persona {
 public:
     Socio();
     Socio(const Socio& orig);
     virtual ~Socio();
 private:
+    std::string FechaInscripcion;
+    
 
 };
 

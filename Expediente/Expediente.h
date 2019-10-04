@@ -19,8 +19,16 @@ public:
     Expediente();
     Expediente(const Expediente& orig);
     virtual ~Expediente();
+    void setGrasaCorporal(float);
+    float getGrasaCorporal();
+    void setMasaMuscular(float);
+    float getMasaMuscular();
+    void setPeso(float);
+    float getPeso();
 private:
-
+    float peso;
+    float masaMuscular;
+    float grasaCorporal;
 };
 
 #endif /* EXPEDIENTE_H */

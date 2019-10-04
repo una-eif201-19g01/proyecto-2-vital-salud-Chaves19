@@ -15,13 +15,21 @@
 #define EJERCICIO_H
 
 class Ejercicio {
+private:
+    int series;
+    int repeticiones;
+    std::string nombreEjercicio;
 public:
     Ejercicio();
     Ejercicio(const Ejercicio& orig);
     virtual ~Ejercicio();
-private:
-    int series;
-    int repeticiones;
+    void setNombreEjercicio(std::string );
+    std::string getNombreEjercicio();
+    void setRepeticiones(int);
+    int getRepeticiones();
+    void setSeries(int);
+    int getSeries();
+
     
 
 };

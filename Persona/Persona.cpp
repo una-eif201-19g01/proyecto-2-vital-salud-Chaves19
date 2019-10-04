@@ -22,27 +22,27 @@ Persona::Persona(const Persona& orig) {
 Persona::~Persona() {
 }
 
-void Persona::SetCedula(std::string cedula) {
+void Persona::setCedula(std::string cedula) {
     this->cedula = cedula;
 }
 
-std::string Persona::GetCedula(){
+std::string Persona::getCedula(){
     return cedula;
 }
 
-void Persona::SetTelefono(std::string telefono) {
+void Persona::setTelefono(std::string telefono) {
     this->telefono = telefono;
 }
 
-std::string Persona::GetTelefono(){
+std::string Persona::getTelefono(){
     return telefono;
 }
 
-void Persona::SetNombre(std::string nombre) {
+void Persona::setNombre(std::string nombre) {
     this->nombre = nombre;
 }
 
-std::string Persona::GetNombre(){
+std::string Persona::getNombre(){
     return nombre;
 }
 
