@@ -11,38 +11,38 @@
  * Created on 4 de octubre de 2019, 9:02
  */
 
-#include "Expediente.h"
+#include "Inscripcion.h"
 
-Expediente::Expediente() {
+Inscripcion::Inscripcion() {
 }
 
-Expediente::Expediente(const Expediente& orig) {
+Inscripcion::Inscripcion(const Inscripcion& orig) {
 }
 
-Expediente::~Expediente() {
+Inscripcion::~Inscripcion() {
 }
 
-void Expediente::setGrasaCorporal(float grasaCorporal) {
+void Inscripcion::setGrasaCorporal(float grasaCorporal) {
     this->grasaCorporal = grasaCorporal;
 }
 
-float Expediente::getGrasaCorporal(){
+float Inscripcion::getGrasaCorporal(){
     return grasaCorporal;
 }
 
-void Expediente::setMasaMuscular(float masaMuscular) {
+void Inscripcion::setMasaMuscular(float masaMuscular) {
     this->masaMuscular = masaMuscular;
 }
 
-float Expediente::getMasaMuscular(){
+float Inscripcion::getMasaMuscular(){
     return masaMuscular;
 }
 
-void Expediente::setPeso(float peso) {
+void Inscripcion::setPeso(float peso) {
     this->peso = peso;
 }
 
-float Expediente::getPeso() const {
+float Inscripcion::getPeso() const {
     return peso;
 }
 

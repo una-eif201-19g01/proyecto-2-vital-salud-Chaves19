@@ -15,12 +15,14 @@
 #define SOCIO_H
 #include "Persona.h"
 class Socio : public Persona {
-public:
-    Socio();
-    Socio(const Socio& orig);
-    virtual ~Socio();
 private:
-    std::string FechaInscripcion;
+    std::string fechaInscripcion;
+public:
+    Socio(std::string, std::string, std::string, std::string, std::string);
+    ~Socio();
+    void setFechaInscripcion(std::string);
+    std::string getFechaInscripcion();
+    std::string toString();
     
 
 };

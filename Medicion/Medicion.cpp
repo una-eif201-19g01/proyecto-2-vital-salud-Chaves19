@@ -5,20 +5,20 @@
  */
 
 /* 
- * File:   ClaseGrupal.cpp
+ * File:   Medicion.cpp
  * Author: achaq
  * 
- * Created on October 24, 2019, 7:47 PM
+ * Created on October 24, 2019, 7:46 PM
  */
 
-#include "ClaseGrupal.h"
+#include "Medicion.h"
 
-ClaseGrupal::ClaseGrupal() {
+Medicion::Medicion() {
 }
 
-ClaseGrupal::ClaseGrupal(const ClaseGrupal& orig) {
+Medicion::Medicion(const Medicion& orig) {
 }
 
-ClaseGrupal::~ClaseGrupal() {
+Medicion::~Medicion() {
 }
 

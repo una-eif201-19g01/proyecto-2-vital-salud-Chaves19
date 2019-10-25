@@ -15,11 +15,13 @@
 #define INSTRUCTOR_H
 #include "Persona.h"
 class Instructor : public Persona {
+private:
+
 public:
     Instructor();
-    Instructor(const Instructor& orig);
-    virtual ~Instructor();
-private:
+    ~Instructor();
+    std::string toString();
+    
 
 };
 

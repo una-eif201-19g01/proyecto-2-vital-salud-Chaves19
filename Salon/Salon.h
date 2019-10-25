@@ -5,23 +5,23 @@
  */
 
 /* 
- * File:   ClaseGrupal.h
+ * File:   Salon.h
  * Author: achaq
  *
  * Created on October 24, 2019, 7:47 PM
  */
 
-#ifndef CLASEGRUPAL_H
-#define CLASEGRUPAL_H
+#ifndef SALON_H
+#define SALON_H
 
-class ClaseGrupal {
+class Salon {
 public:
-    ClaseGrupal();
-    ClaseGrupal(const ClaseGrupal& orig);
-    virtual ~ClaseGrupal();
+    Salon();
+    Salon(const Salon& orig);
+    virtual ~Salon();
 private:
 
 };
 
-#endif /* CLASEGRUPAL_H */
+#endif /* SALON_H */
 

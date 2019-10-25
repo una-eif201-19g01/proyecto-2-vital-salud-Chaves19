@@ -5,23 +5,23 @@
  */
 
 /* 
- * File:   ClaseGrupal.h
+ * File:   Medicion.h
  * Author: achaq
  *
- * Created on October 24, 2019, 7:47 PM
+ * Created on October 24, 2019, 7:46 PM
  */
 
-#ifndef CLASEGRUPAL_H
-#define CLASEGRUPAL_H
+#ifndef MEDICION_H
+#define MEDICION_H
 
-class ClaseGrupal {
+class Medicion {
 public:
-    ClaseGrupal();
-    ClaseGrupal(const ClaseGrupal& orig);
-    virtual ~ClaseGrupal();
+    Medicion();
+    Medicion(const Medicion& orig);
+    virtual ~Medicion();
 private:
 
 };
 
-#endif /* CLASEGRUPAL_H */
+#endif /* MEDICION_H */
 

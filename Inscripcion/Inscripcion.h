@@ -5,20 +5,20 @@
  */
 
 /* 
- * File:   Expediente.h
+ * File:   Inscripcion.h
  * Author: ESCINF
  *
  * Created on 4 de octubre de 2019, 9:02
  */
 
-#ifndef EXPEDIENTE_H
-#define EXPEDIENTE_H
+#ifndef INSCRIPCION_H
+#define INSCRIPCION_H
 
-class Expediente {
+class Inscripcion {
 public:
-    Expediente();
-    Expediente(const Expediente& orig);
-    virtual ~Expediente();
+    Inscripcion();
+    Inscripcion(const Inscripcion& orig);
+    virtual ~Inscripcion();
     void setGrasaCorporal(float);
     float getGrasaCorporal();
     void setMasaMuscular(float);
@@ -31,5 +31,5 @@ private:
     float grasaCorporal;
 };
 
-#endif /* EXPEDIENTE_H */
+#endif /* INSCRIPCION_H */
 

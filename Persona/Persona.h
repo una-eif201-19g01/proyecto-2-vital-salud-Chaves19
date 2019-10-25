@@ -14,14 +14,15 @@
 #ifndef PERSONA_H
 #define PERSONA_H
 
+#include <string>
+
 class Persona {
 private:
     std::string nombre;
     std::string telefono;
     std::string cedula;
 public:
-    Persona();
-    Persona(const Persona& orig);
+    Persona(std::string, std::string, std::string);
     virtual ~Persona();
     void setCedula(std::string);
     std::string getCedula();
@@ -29,6 +30,7 @@ public:
     std::string getTelefono();
     void setNombre(std::string);
     std::string getNombre();
+    virtual std::string toString();
 
    
 };

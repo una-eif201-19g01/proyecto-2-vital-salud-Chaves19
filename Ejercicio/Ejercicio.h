@@ -6,31 +6,20 @@
 
 /* 
  * File:   Ejercicio.h
- * Author: ESCINF
+ * Author: achaq
  *
- * Created on 4 de octubre de 2019, 9:03
+ * Created on October 24, 2019, 7:46 PM
  */
 
 #ifndef EJERCICIO_H
 #define EJERCICIO_H
 
 class Ejercicio {
-private:
-    int series;
-    int repeticiones;
-    std::string nombreEjercicio;
 public:
     Ejercicio();
     Ejercicio(const Ejercicio& orig);
     virtual ~Ejercicio();
-    void setNombreEjercicio(std::string );
-    std::string getNombreEjercicio();
-    void setRepeticiones(int);
-    int getRepeticiones();
-    void setSeries(int);
-    int getSeries();
-
-    
+private:
 
 };
 

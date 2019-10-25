@@ -13,14 +13,9 @@
 
 #include "Persona.h"
 
-Persona::Persona() {
-}
+Persona::Persona(std::string nombre, std::string telefono, std::string cedula): nombre(nombre), telefono(telefono), cedula(cedula) {}
 
-Persona::Persona(const Persona& orig) {
-}
-
-Persona::~Persona() {
-}
+Persona::~Persona() {}
 
 void Persona::setCedula(std::string cedula) {
     this->cedula = cedula;
@@ -44,5 +39,13 @@ void Persona::setNombre(std::string nombre) {
 
 std::string Persona::getNombre(){
     return nombre;
+}
+
+std::string Persona::toString(){
+stringstream s;
+    s<<"nombre: "<<getNombre()<<"\n";
+    s<<"telefono: "<<getTelefono()<<"\n";
+    s<<"cedula: "<<getCedula()<<"\n";
+return s.str();
 }
 

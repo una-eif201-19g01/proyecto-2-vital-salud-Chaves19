@@ -13,12 +13,20 @@
 
 #include "Socio.h"
 
-Socio::Socio() {
+Socio::Socio(std::string  nombre, std::string telefono, std::string cedula, std::string fechaInscripcion): Persona(nombre, telefono, cedula), fechaInscripcion(fechaInscripcion) {}
+
+Socio::~Socio() {}
+
+void Socio::setFechaInscripcion(std::string fechaInscripcion){
+    this->fechaInscripcion = fechaInscripcion;
 }
 
-Socio::Socio(const Socio& orig) {
+std::string Socio::getFechaInscripcion(){
+    return fechaInscripcion;
 }
-
-Socio::~Socio() {
+std::string Socio::toString(){
+    stringstream s;
+    s<<Persona.toString();
+    s<<"fechaDeInscrpcion: "<<getFechaInscripcion()<<"\n";
+    return s.str();
 }
-
