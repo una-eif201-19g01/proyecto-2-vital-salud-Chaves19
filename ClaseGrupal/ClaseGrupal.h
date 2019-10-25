@@ -14,12 +14,15 @@
 #ifndef CLASEGRUPAL_H
 #define CLASEGRUPAL_H
 
+#include "Socio.h"
+
 class ClaseGrupal {
+private:
 public:
     ClaseGrupal();
-    ClaseGrupal(const ClaseGrupal& orig);
-    virtual ~ClaseGrupal();
-private:
+    ~ClaseGrupal();
+    std::string toString();
+    
 
 };
 

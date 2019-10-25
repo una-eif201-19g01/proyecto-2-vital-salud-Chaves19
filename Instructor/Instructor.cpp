@@ -13,12 +13,15 @@
 
 #include "Instructor.h"
 
-Instructor::Instructor() {
-}
-
-Instructor::Instructor(const Instructor& orig) {
+Instructor::Instructor(std::string  nombre, std::string telefono, std::string cedula, std::string fechaInscripcion): Persona(nombre, telefono, cedula) {
 }
 
 Instructor::~Instructor() {
+}
+
+std::string Instructor::toString(){
+    stringstream s;
+    s<<Persona::toString()<<"\n";
+    return s.str();
 }
 

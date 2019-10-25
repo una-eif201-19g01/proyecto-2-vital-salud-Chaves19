@@ -16,9 +16,6 @@
 ClaseGrupal::ClaseGrupal() {
 }
 
-ClaseGrupal::ClaseGrupal(const ClaseGrupal& orig) {
-}
-
 ClaseGrupal::~ClaseGrupal() {
 }
 

@@ -15,11 +15,11 @@
 #define EJERCICIO_H
 
 class Ejercicio {
+private:
+    
 public:
     Ejercicio();
-    Ejercicio(const Ejercicio& orig);
     virtual ~Ejercicio();
-private:
 
 };
 

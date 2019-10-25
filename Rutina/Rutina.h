@@ -13,15 +13,26 @@
 
 #ifndef RUTINA_H
 #define RUTINA_H
-
+#include "Ejercicio.h"
 class Rutina {
-public:
-    Rutina();
-    Rutina(const Rutina& orig);
-    virtual ~Rutina();
 private:
+    std::string fechaDeInicio;
     std::string fechaDeVencimiento;
     std::string objetivo;
+    std::string codigoRutina;
+    int cantidad;   
+public:
+    Rutina(std::string, std::string, std::string, std::string);
+    virtual ~Rutina();
+    void SetCodigoRutina(std::string codigoRutina);
+    std::string GetCodigoRutina();
+    void SetObjetivo(std::string objetivo);
+    std::string GetObjetivo();
+    void SetFechaDeVencimiento(std::string fechaDeVencimiento);
+    std::string GetFechaDeVencimiento();
+    void SetFechaDeInicio(std::string fechaDeInicio);
+    std::string GetFechaDeInicio();
+    std::string toString();
 
 };
 

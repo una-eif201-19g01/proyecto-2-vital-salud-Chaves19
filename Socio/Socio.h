@@ -14,15 +14,22 @@
 #ifndef SOCIO_H
 #define SOCIO_H
 #include "Persona.h"
+#include "Instructor.h"
 class Socio : public Persona {
 private:
     std::string fechaInscripcion;
+    std::string correoElectronico;
+    Instructor instructor1;
 public:
-    Socio(std::string, std::string, std::string, std::string, std::string);
+    Socio(std::string, std::string, std::string, std::string, std::string, std::string);
     ~Socio();
     void setFechaInscripcion(std::string);
     std::string getFechaInscripcion();
+    void setCorreoElectronico(std::string);
+    std::string getCorreoElectronico();
     std::string toString();
+    void setInstructor(Instructor*);
+    Instructor getInstructor();
     
 
 };

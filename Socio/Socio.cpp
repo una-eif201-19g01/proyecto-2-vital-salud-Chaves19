@@ -13,7 +13,10 @@
 
 #include "Socio.h"
 
-Socio::Socio(std::string  nombre, std::string telefono, std::string cedula, std::string fechaInscripcion): Persona(nombre, telefono, cedula), fechaInscripcion(fechaInscripcion) {}
+Socio::Socio(std::string  nombre, std::string telefono, std::string cedula, std::string fechaInscripcion, std::string correoElectronico): Persona(nombre, telefono, cedula),
+        fechaInscripcion(fechaInscripcion), correoElectronico(correoElectronico){
+    instructor1 = NULL;
+}
 
 Socio::~Socio() {}
 
@@ -24,9 +27,25 @@ void Socio::setFechaInscripcion(std::string fechaInscripcion){
 std::string Socio::getFechaInscripcion(){
     return fechaInscripcion;
 }
+
+void Socio::setCorreoElectronico(std::string correoElectronico){
+    this->correoElectronico = correoElectronico;
+}
+std::string Socio::getCorreoElectronico(){
+    return correoElectronico;
+}
 std::string Socio::toString(){
     stringstream s;
     s<<Persona.toString();
+    s<<"CorreoElectronico: "<<getCorreoElectronico()<<"\n";
     s<<"fechaDeInscrpcion: "<<getFechaInscripcion()<<"\n";
     return s.str();
+}
+void Socio::setInstructor(Instructor* instructor1){
+   this->instructor1 = instructor1;
+    
+}
+
+Instructor Socio::getInstructor(){
+    return instructor1;  
 }

@@ -13,12 +13,44 @@
 
 #include "Rutina.h"
 
-Rutina::Rutina() {
-}
-
-Rutina::Rutina(const Rutina& orig) {
-}
+Rutina::Rutina(std::string fechaDeInicio, std::string fechaDeVencimiento, std::string objetivo, std::string codigoRutina): fechaDeInicio(fechaDeInicio),
+ fechaDeVencimiento(fechaDeVencimiento), objetivo(objetivo),codigoRutina(codigoRutina){}
 
 Rutina::~Rutina() {
+}
+
+void Rutina::SetCodigoRutina(std::string codigoRutina) {
+    this->codigoRutina = codigoRutina;
+}
+
+std::string Rutina::GetCodigoRutina(){
+    return codigoRutina;
+}
+
+void Rutina::SetObjetivo(std::string objetivo) {
+    this->objetivo = objetivo;
+}
+
+std::string Rutina::GetObjetivo(){
+    return objetivo;
+}
+
+void Rutina::SetFechaDeVencimiento(std::string fechaDeVencimiento) {
+    this->fechaDeVencimiento = fechaDeVencimiento;
+}
+
+std::string Rutina::GetFechaDeVencimiento(){
+    return fechaDeVencimiento;
+}
+
+void Rutina::SetFechaDeInicio(std::string fechaDeInicio) {
+    this->fechaDeInicio = fechaDeInicio;
+}
+
+std::string Rutina::GetFechaDeInicio(){
+    return fechaDeInicio;
+}
+std::string Rutina::toString(){
+    
 }
 
