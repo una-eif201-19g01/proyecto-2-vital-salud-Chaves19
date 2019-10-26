@@ -19,8 +19,9 @@ class Socio : public Persona {
 private:
     std::string fechaInscripcion;
     std::string correoElectronico;
-    Instructor instructor1;
+    Instructor* instructor1;
 public:
+    Socio();
     Socio(std::string, std::string, std::string, std::string, std::string, std::string);
     ~Socio();
     void setFechaInscripcion(std::string);

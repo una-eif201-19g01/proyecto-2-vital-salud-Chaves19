@@ -22,3 +22,6 @@ Ejercicio::Ejercicio(const Ejercicio& orig) {
 Ejercicio::~Ejercicio() {
 }
 
+
+
+

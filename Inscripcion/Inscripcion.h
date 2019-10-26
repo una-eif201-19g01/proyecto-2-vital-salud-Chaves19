@@ -19,16 +19,9 @@ public:
     Inscripcion();
     Inscripcion(const Inscripcion& orig);
     virtual ~Inscripcion();
-    void setGrasaCorporal(float);
-    float getGrasaCorporal();
-    void setMasaMuscular(float);
-    float getMasaMuscular();
-    void setPeso(float);
-    float getPeso();
+   
 private:
-    float peso;
-    float masaMuscular;
-    float grasaCorporal;
+    
 };
 
 #endif /* INSCRIPCION_H */

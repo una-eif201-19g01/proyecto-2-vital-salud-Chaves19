@@ -13,8 +13,10 @@
 
 #include "Socio.h"
 
+Socio::Socio(): Persona(),fechaInscripcion(" "), correoElectronico(" "){}
+
 Socio::Socio(std::string  nombre, std::string telefono, std::string cedula, std::string fechaInscripcion, std::string correoElectronico): Persona(nombre, telefono, cedula),
-        fechaInscripcion(fechaInscripcion), correoElectronico(correoElectronico){
+    fechaInscripcion(fechaInscripcion), correoElectronico(correoElectronico){
     instructor1 = NULL;
 }
 

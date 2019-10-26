@@ -16,7 +16,9 @@
 
 class Ejercicio {
 private:
-    
+    std::string nombre;
+    int series;
+    int repeticiones;
 public:
     Ejercicio();
     virtual ~Ejercicio();

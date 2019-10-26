@@ -14,13 +14,21 @@
 #ifndef MEDICION_H
 #define MEDICION_H
 
-class Medicion {
+class Medicion{
+private:
+    float peso;
+    float masaMuscular;
+    float grasaCorporal;
 public:
     Medicion();
     Medicion(const Medicion& orig);
     virtual ~Medicion();
-private:
-
+    void Medicion::setGrasaCorporal(float);
+    float getGrasaCorporal();
+    void setMasaMuscular(float);
+    float getMasaMuscular();
+    void setPeso(float);
+    float getPeso();
 };
 
 #endif /* MEDICION_H */

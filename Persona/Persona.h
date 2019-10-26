@@ -14,7 +14,8 @@
 #ifndef PERSONA_H
 #define PERSONA_H
 
-#include <string>
+#include <iostream>
+#include <fstream>
 
 class Persona {
 private:
@@ -22,6 +23,7 @@ private:
     std::string telefono;
     std::string cedula;
 public:
+    Persona();
     Persona(std::string, std::string, std::string);
     virtual ~Persona();
     void setCedula(std::string);

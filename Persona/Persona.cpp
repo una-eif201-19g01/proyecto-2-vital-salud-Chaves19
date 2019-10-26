@@ -13,6 +13,8 @@
 
 #include "Persona.h"
 
+Persona::Persona(): nombre(" "), telefono(" "), cedula(" ") {}
+
 Persona::Persona(std::string nombre, std::string telefono, std::string cedula): nombre(nombre), telefono(telefono), cedula(cedula) {}
 
 Persona::~Persona() {}
